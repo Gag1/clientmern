@@ -13,7 +13,7 @@ function Register (){
     const navigate = useNavigate(); 
 
     const postData =  () =>{
-        fetch('/registeredData',{
+        fetch('https://backendmern-gag1.vercel.app/registeredData',{
             method:'post',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(values)

@@ -13,7 +13,7 @@ function Login() {
   })
   
   const postData = () =>{
-    fetch('/loginedData',{
+    fetch('https://backendmern-gag1.vercel.app/loginedData',{
       method:'post',
       headers:{'content-type':'application/json'},
       body:JSON.stringify(values)

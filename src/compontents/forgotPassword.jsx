@@ -7,7 +7,7 @@ const ForgotPassword = () =>{
     const [confirm,setConfirm] = useState(null);
 
     const getPassword = () =>{
-       fetch('/resetPassword',{
+       fetch('https://backendmern-gag1.vercel.app/resetPassword',{
         method:'post',
         headers:{'content-type':'application/json'},
         body:JSON.stringify({email:value})
@@ -55,7 +55,7 @@ const ForgotPassword = () =>{
       if(isUppercaseNumber == false){
          return
       }
-      fetch('/postEmailCodeAndPassword',{
+      fetch('https://backendmern-gag1.vercel.app/postEmailCodeAndPassword',{
         method:'post',
         headers:{'content-type':'application/json'},
         body:JSON.stringify(resetPasswordData)
