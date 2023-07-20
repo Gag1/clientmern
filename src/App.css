@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+
+input {
+    display: block;
+}
+.register{
+    max-width: 450px;
+    height: 450px;
+    background-color: hwb(226 74% 2%);
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+
+}
+
+form{
+    position: absolute;
+    left: 21%;
+    top: 25%;
+    color: rgb(9, 9, 9);
+}
+form label{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+form input{
+    width: 250px;
+    height: 23px;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(97, 95, 95);
+}
+
+
+form button{
+    width: 80px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    color: rgb(9, 9, 9);
+    margin-top: 10px;
+}
+form  #login{
+    margin-left: 7px;
+}
+
+form button:hover{
+    transition: 1s;
+    background-color: hwb(226 65% 4%);
+}
+.forgotPassButton{
+    width: 166px;
+    height: 35px;
+}
+.forgotPassword{
+    height: 450px;
+}
+
+
+/**/
+
+.profile{
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+.cont{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cont .col p{
+    font-size: 72px;
+    animation: animateDashboardText 5s linear alternate;
+}
+
+@keyframes animateDashboardText{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.logoutButton{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(101, 193, 242);
+    border: none;
+    cursor: pointer;
+    color: rgb(9, 9, 9);
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.onlinePeople{
+
+    background-image: url("../src/img/pngwing.com.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    display: inline-block;
+}
+ span{
+    margin-left: -180px;
+}
