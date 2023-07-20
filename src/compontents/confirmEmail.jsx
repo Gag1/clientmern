@@ -9,7 +9,7 @@ function ConfirmEmail(){
     const confirmToken = new URLSearchParams(location.search).get('token');
     
     useEffect(() =>{
-        fetch(`/confirm-email?token=${confirmToken}`).then((res) => {
+        fetch(`https://backendmern-gag1.vercel.app/confirm-email?token=${confirmToken}`).then((res) => {
          console.log(res);
 
           if(res.ok) {
